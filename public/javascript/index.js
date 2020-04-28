@@ -26,7 +26,9 @@ window.addEventListener('load', () => {
 
     let ID = 54
 
-    axios.get('http://localhost:5000/characters/' + ID)
+    axios.get('http://localhost:8000/characters/' + ID).then((response) => {
+      console.log(response.data)
+    })
 
   });
 
