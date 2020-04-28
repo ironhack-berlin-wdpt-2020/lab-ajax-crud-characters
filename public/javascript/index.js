@@ -24,9 +24,9 @@ window.addEventListener('load', () => {
 
   document.getElementById('fetch-one').addEventListener('click', function (event) {
 
-    let id = 54
+    let ID = 54
 
-    axios.get('http://localhost:8000/characters/' + id)
+    axios.get('http://localhost:5000/characters/' + ID)
 
   });
 
