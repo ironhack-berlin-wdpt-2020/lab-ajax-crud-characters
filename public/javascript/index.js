@@ -24,6 +24,10 @@ window.addEventListener('load', () => {
 
   document.getElementById('fetch-one').addEventListener('click', function (event) {
 
+    let id = 54
+
+    axios.get('http://localhost:8000/characters/' + id)
+
   });
 
   document.getElementById('delete-one').addEventListener('click', function (event) {
